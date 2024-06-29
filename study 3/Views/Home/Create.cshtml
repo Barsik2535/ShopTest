@@ -1,0 +1,17 @@
+﻿@model study_3.Models.User
+ 
+<h2>Заказ забора</h2>
+<form asp-action="create" asp-controller="home">
+    <p>
+        <label asp-for="Name">Адрес</label><br />
+        <input type="text" asp-for="Name" />
+    </p>
+    <p>
+        <label asp-for="Age">Количество</label><br />
+        <input type="number" asp-for="Age" />
+    </p>
+    <p>
+        <input type="submit" value="Отправить" />
+    </p>
+</form>
+
